@@ -1,0 +1,248 @@
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: Arial;  
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-size: large;
+}
+
+/* Header Styles */
+header {
+    background: #491b1b; 
+    padding: 16px 0; 
+}
+
+header nav {
+    display: flex; 
+    justify-content: center;
+}
+
+header nav a {
+    margin: 0 16px; 
+    padding: 8px;
+    color: white; 
+    text-decoration: none; 
+}
+
+header nav a:hover {
+    background: #805252; 
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; 
+    padding: 16px;
+    background: #491b1b; 
+    color: white; 
+}
+
+/* Index Page Styles */
+.profile-image {
+    height: auto;
+    max-width: 150px; 
+    border-radius: 40%; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: auto;
+    flex: 1; 
+    padding: 32px; 
+}
+
+.intro {
+    align-items: center; 
+    display: flex; 
+    gap: 16px;
+}
+
+.intro-paragraph {
+    flex: 1; 
+}
+
+/* Profile Image Style */
+.profile-image {
+    height: auto;
+    max-width: 150px; 
+    border-radius: 40%; 
+}
+
+/* Skills Styles */
+.skills {
+    margin-top: 32px;
+}
+
+.skills h2 {
+    margin-bottom: 16px;
+}
+
+.skills ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background: #faf1f1;
+    border-radius: 4px;
+}
+
+/* Social Media Styles */
+.social-media {
+    margin-top: 32px;
+}
+
+.social-media h2 {
+    margin-bottom: 16px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.social-media img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.5);
+}
+
+/* Project Page Styles */
+
+.projects {
+    display: grid;
+    margin-top: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.project-items {
+    background: whitesmoke;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+    text-align: center;
+}
+
+.projectImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.project-items h3 {
+    margin: 16px 0 8px;
+}
+
+/* Contact Page Styles */
+
+.contact-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.my-contact .contact-form { 
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.my-contact {
+    background: whitesmoke;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+    max-width: 70%;
+}
+
+.my-contact img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    background-color: #7a3f3f; 
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+}
+
+.contact-form label {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 12px;
+    border: none;
+    font-weight: bolder;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+
+}
+
+.contact-form button:hover {
+    background-color: rgb(196, 187, 171);
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+}
+
+/* Video Demo Page Styles */
+.video-demo {
+    display: flex;
+    margin-top: 32px;
+}
+
+.video-demo iframe {
+    border-radius: 8px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+}
+
+/* Report Page Styles */
+.report p {
+    text-align: justify;
+    margin-bottom: 16px; 
+    line-height: 1.5;
+}
+
+.report p a:hover {
+    color: #1c6cc2;
+    cursor: pointer;
+}
+
+.validation {
+    margin-top: 32px;
+}
+
+.references a:hover {
+    color: #1c6cc2;
+    cursor: pointer;
+}
