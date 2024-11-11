@@ -246,3 +246,56 @@ footer {
     color: #1c6cc2;
     cursor: pointer;
 }
+
+
+
+
+
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+/* Hide menu by default on smaller screens */
+.menu {
+    display: none;
+}
+
+/* Display the hamburger icon and menu on smaller screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .menu.show {
+        display: block; /* Show menu when toggled */
+    }
+}
+
+/* Ensure menu links are visible in mobile view */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu ul li {
+    margin: 10px 0;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
