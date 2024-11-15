@@ -4,33 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video</title>
-    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <!-- Navigation Panel -->
         <nav>
-            <a href="index.html">HOME</a>
-            <a href="project.html">PROJECT</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="sitereport.html">SITEREPORT</a>
-            <a href="videodemo.html">VIDEODEMO</a>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="project.html">PROJECT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="sitereport.html">SITEREPORT</a>
+                <a href="videodemo.html">VIDEODEMO</a>
+            </div>
         </nav>
     </header>
 
     <!-- Content -->
-     <div class="container">
+    <div class="container">
         <h1>Video Demonstration</h1>
         <div class="video-demo">
-            <iframe id="kmsembed-0_uou4f01e" width=" 640" height="420" src="https://mymedia.northampton.ac.uk/embed/secure/iframe/entryId/0_uou4f01e/uiConfId/23453349/st/0" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Group Project Presentation Video"></iframe>
+            <iframe id="kmsembed-0_uou4f01e" width="640" height="420" 
+                src="https://mymedia.northampton.ac.uk/embed/secure/iframe/entryId/0_uou4f01e/uiConfId/23453349/st/0" 
+                class="kmsembed" 
+                allowfullscreen 
+                webkitallowfullscreen 
+                mozAllowFullScreen 
+                allow="autoplay *; fullscreen *; encrypted-media *" 
+                referrerPolicy="no-referrer-when-downgrade" 
+                sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" 
+                frameborder="0" 
+                title="Group Project Presentation Video">
+            </iframe>
         </div>
-     </div>
+    </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Rhythm Manandhar. </p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
+ 
