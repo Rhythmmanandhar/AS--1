@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report</title>
+    <title>Site Report</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- Navigation Panel -->
         <nav>
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <a href="index.html">HOME</a>
+            <a href="project.html">PROJECT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="sitereport.html">SITEREPORT</a>
+            <a href="videodemo.html">VIDEODEMO</a>
+        </nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- Navigation Panel -->
+        <nav class="menu" id="menu">
             <a href="index.html">HOME</a>
             <a href="project.html">PROJECT</a>
             <a href="contact.html">CONTACT</a>
@@ -18,24 +32,9 @@
             <a href="videodemo.html">VIDEODEMO</a>
         </nav>
     </header>
-    <div class="navbar">
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#project">PROJECT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#sitereport">SITEREPORT</a></li>
-                <li><a href="#videodemo">VIDEODEMO</a></li>
-            </ul>
-        </nav>
-    </div>
+
     <!-- Content -->
-     <div class="container">
+    <div class="container">
         <h1>Site Report</h1>
 
         <div class="report">
@@ -51,51 +50,63 @@
             </p>
 
             <p>My module experience was good. I learned a lot about CSS design. Initially, I focused on making the website work functionally. However, I also realized the importance of user-friendliness. 
-                So, I had to manage the different color components and sections to create a cohesive and visually appealing design. I aimed for complementary colors whenever possible. Ultimately. the expereince was knowledgeable and fun.
+                So, I had to manage the different color components and sections to create a cohesive and visually appealing design. I aimed for complementary colors whenever possible. Ultimately, the experience was knowledgeable and fun.
+            </p>
+            
+            <p>
+                Some problems I faced during the programming was when I was adding the images in the website. I couldn't figure out the right way to do it so, I haven;t uploaded any images in the website including the validation screenshot but i have made sure to put it in the word document.
             </p>
 
-            <p>URL: <a href="https://mymedia.northampton.ac.uk/media/Group+Project+Presentation+Video/0_uou4f01e" target="_blank">Video Demo</a></p>
+
+            <p>URL: <a href="" target="_blank">Video Demo</a></p>
+
+
 
         </div>
 
-        <!-- Validation -->
-         <h2>Validation Screenshots</h3>
-         <div class="Validation"></div>
+        <!-- Validation Screenshots -->
+        <h2>Validation Screenshots</h2>
+        <div class="validation">
             <h3>Index Page</h3>
-            <img src="images/" alt="Index page validation">
+            <img src="img/index-validation.png" alt="Index page validation">
 
             <h3>Projects Page</h3>
-            <img src="images/" alt="Project page validation">
+            <img src="images/project-validation.png" alt="Project page validation">
 
             <h3>Contact Page</h3>
-            <img src="images/" alt="Contact page validation">
+            <img src="images/contact-validation.png" alt="Contact page validation">
 
             <h3>Video Demo Page</h3>
-            <img src="images/" alt="Video Demo page validation">
+            <img src="images/video-validatin.png" alt="Video Demo page validation">
 
             <h3>Site Report Page</h3>
-            <img src="images/" alt="Site report page validation">
+            <img src="images/site-report-validatin.png" alt="Site report page validation">
 
             <h3>CSS Page</h3>
-            <img src="images/" alt="CSS page validation">
+            <img src="images/css-validation.png" alt="CSS page validation">
+        </div>
 
         <!-- References -->
         <h2>References</h2>
         <div class="references">
             <p>CSS Scan. (n.d.). CSS Box Shadow Examples. Retrieved from <a href="https://getcssscan.com/css-box-shadow-examples" target="_blank">https://getcssscan.com/css-box-shadow-examples</a></p>
         </div>
-     </div>  
-     
+    </div>  
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Rhythm Manandhar.</p>
     </footer>
 
+    <!-- JavaScript to toggle the menu -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
-
-
 
 
 
