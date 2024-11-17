@@ -3,65 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video Demonstration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- Navigation Panel -->
         <nav>
-            <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <nav class="menu" id="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#project">PROJECT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#sitereport">SITEREPORT</a></li>
-                    <li><a href="#videodemo">VIDEODEMO</a></li>
-                </ul>
-            </nav>
+            <img src="images/logo.png" class="logo" alt="Logo">
+            <a href="index.html">HOME</a>
+            <a href="project.html">PROJECT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="sitereport.html">SITEREPORT</a>
+            <a href="videodemo.html">VIDEODEMO</a>
+        </nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-    
-            <div class="nav-links" id="nav-links">
-                <a href="index.html">HOME</a>
-                <a href="project.html">PROJECT</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="sitereport.html">SITEREPORT</a>
-                <a href="videodemo.html">VIDEODEMO</a>
-            </div>
+        <!-- Navigation Panel -->
+        <nav class="menu" id="menu">
+            <a href="index.html">HOME</a>
+            <a href="project.html">PROJECT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="sitereport.html">SITEREPORT</a>
+            <a href="videodemo.html">VIDEODEMO</a>
         </nav>
     </header>
 
     <!-- Content -->
-    <div class="container">
+    <main class="container">
         <h1>Video Demonstration</h1>
         <div class="video-demo">
-            <iframe id="kmsembed-0_uou4f01e" width="640" height="420" 
-                src="https://mymedia.northampton.ac.uk/embed/secure/iframe/entryId/0_uou4f01e/uiConfId/23453349/st/0" 
+            <iframe id="kmsembed-0_uou4f01e" 
+                width="100%" height="420" 
+                
+                
+                src="https://" 
+                
+                
                 class="kmsembed" 
                 allowfullscreen 
                 webkitallowfullscreen 
-                mozAllowFullScreen 
+                mozallowfullscreen 
                 allow="autoplay *; fullscreen *; encrypted-media *" 
-                referrerPolicy="no-referrer-when-downgrade" 
+                referrerpolicy="no-referrer-when-downgrade" 
                 sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" 
                 frameborder="0" 
-                title="Group Project Presentation Video">
+                title=" Video Demonstration">
             </iframe>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Rhythm Manandhar. </p>
+        <p>&copy; 2024 Rhythm Manandhar.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script>
+        // JavaScript for toggling the menu
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
- 
